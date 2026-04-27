@@ -1,0 +1,104 @@
+category,type,value,date,additional_description
+Aluguel,Despesa,16500.00,2025-01-01,Aluguel sede corporativa
+Vendas de Software,Receita,18200.00,2025-01-01,Novo cliente varejo
+Água/Luz,Despesa,4200.00,2025-01-05,
+Assinatura SaaS,Receita,25400.00,2025-01-02,Renovação contrato anual
+Folha de Pagamento,Despesa,73500.00,2025-01-05,Salários + benefícios
+Vendas de Software,Receita,15700.00,2025-01-03,
+Infraestrutura Cloud,Despesa,32500.00,2025-01-10,Migração para servidores dedicados
+Assinatura SaaS,Receita,18900.00,2025-01-04,
+Telefone/Internet,Despesa,2100.00,2025-01-07,
+Vendas de Software,Receita,13400.00,2025-01-06,
+Assinatura SaaS,Receita,21800.00,2025-01-08,Novo cliente startup
+Marketing,Despesa,14700.00,2025-01-15,Campanha lançamento inverno
+Vendas de Software,Receita,16500.00,2025-01-07,
+Vendas de Software,Receita,14200.00,2025-01-09,
+Assinatura SaaS,Receita,20300.00,2025-01-10,
+Viagem Comercial,Despesa,8900.00,2025-01-22,Feira CES Las Vegas
+Vendas de Software,Receita,23800.00,2025-01-11,Contrato corporativo
+Assinatura SaaS,Receita,19100.00,2025-01-12,
+Vendas de Software,Receita,12600.00,2025-01-13,
+Assinatura SaaS,Receita,17400.00,2025-01-14,
+Vendas de Software,Receita,15200.00,2025-01-16,
+Assinatura SaaS,Receita,22700.00,2025-01-17,
+Vendas de Software,Receita,16300.00,2025-01-18,
+Assinatura SaaS,Receita,19800.00,2025-01-19,
+Vendas de Software,Receita,14500.00,2025-01-20,
+Assinatura SaaS,Receita,21100.00,2025-01-21,
+Vendas de Software,Receita,17600.00,2025-01-23,
+Assinatura SaaS,Receita,23400.00,2025-01-24,
+Vendas de Software,Receita,12800.00,2025-01-25,
+Assinatura SaaS,Receita,18700.00,2025-01-26,
+Vendas de Software,Receita,15400.00,2025-01-27,
+Assinatura SaaS,Receita,20200.00,2025-01-28,
+Vendas de Software,Receita,16900.00,2025-01-29,
+Assinatura SaaS,Receita,21600.00,2025-01-30,
+Vendas de Software,Receita,18100.00,2025-01-31,
+Manutenção,Despesa,6800.00,2025-01-25,Atualização firewall
+Aluguel,Despesa,16500.00,2025-02-01,Aluguel sede corporativa
+Assinatura SaaS,Receita,26800.00,2025-02-01,Renovação contrato enterprise
+Vendas de Software,Receita,17400.00,2025-02-02,
+Assinatura SaaS,Receita,23100.00,2025-02-03,
+Vendas de Software,Receita,18900.00,2025-02-04,
+Água/Luz,Despesa,4200.00,2025-02-05,
+Folha de Pagamento,Despesa,73500.00,2025-02-05,Salários + benefícios
+Assinatura SaaS,Receita,24500.00,2025-02-06,
+Telefone/Internet,Despesa,2100.00,2025-02-07,
+Vendas de Software,Receita,20300.00,2025-02-07,
+Assinatura SaaS,Receita,21700.00,2025-02-08,
+Vendas de Software,Receita,15600.00,2025-02-09,
+Infraestrutura Cloud,Despesa,33800.00,2025-02-10,Renovação licença VMware
+Assinatura SaaS,Receita,27400.00,2025-02-10,
+Vendas de Software,Receita,18200.00,2025-02-11,
+Marketing,Despesa,18900.00,2025-02-14,Campanha especial
+Assinatura SaaS,Receita,25600.00,2025-02-12,
+Vendas de Software,Receita,19400.00,2025-02-13,
+Assinatura SaaS,Receita,23900.00,2025-02-15,Renovação domínio .cloud
+Vendas de Software,Receita,16800.00,2025-02-16,
+Assinatura SaaS,Receita,26100.00,2025-02-17,
+Vendas de Software,Receita,17700.00,2025-02-18,
+Viagem Comercial,Despesa,12700.00,2025-02-20,Conferência Mobile World
+Assinatura SaaS,Receita,22800.00,2025-02-19,
+Vendas de Software,Receita,21300.00,2025-02-21,
+Assinatura SaaS,Receita,25100.00,2025-02-22,
+Vendas de Software,Receita,18500.00,2025-02-23,
+Assinatura SaaS,Receita,24300.00,2025-02-24,
+Manutenção,Despesa,9200.00,2025-02-25,Atualização switches
+Vendas de Software,Receita,19600.00,2025-02-26,
+Assinatura SaaS,Receita,23400.00,2025-02-27,
+Vendas de Software,Receita,17900.00,2025-02-28,
+Aluguel,Despesa,16500.00,2025-03-01,Aluguel sede corporativa
+Assinatura SaaS,Receita,28500.00,2025-03-01,Renovação contrato global
+Vendas de Software,Receita,21400.00,2025-03-02,
+Assinatura SaaS,Receita,27200.00,2025-03-03,
+Vendas de Software,Receita,19800.00,2025-03-04,
+Água/Luz,Despesa,4200.00,2025-03-05,
+Folha de Pagamento,Despesa,75200.00,2025-03-05,Salários + PLR
+Assinatura SaaS,Receita,26300.00,2025-03-06,
+Telefone/Internet,Despesa,2100.00,2025-03-07,
+Vendas de Software,Receita,22700.00,2025-03-07,
+Assinatura SaaS,Receita,29100.00,2025-03-08,
+Vendas de Software,Receita,18500.00,2025-03-09,
+Infraestrutura Cloud,Despesa,35200.00,2025-03-10,Atualização CDN
+Assinatura SaaS,Receita,30200.00,2025-03-10,Renovação certificado SSL
+Vendas de Software,Receita,24300.00,2025-03-11,
+Consultoria Cibersegurança,Despesa,18400.00,2025-03-12,Resposta a incidente de segurança
+Assinatura SaaS,Receita,27800.00,2025-03-13,
+Vendas de Software,Receita,21600.00,2025-03-14,
+Marketing,Despesa,23500.00,2025-03-15,Campanha dia do consumidor
+Assinatura SaaS,Receita,25600.00,2025-03-16,
+Vendas de Software,Receita,19200.00,2025-03-17,
+Viagem Comercial,Despesa,21400.00,2025-03-18,Feira Future Tech SP 2025
+Assinatura SaaS,Receita,28700.00,2025-03-19,
+Vendas de Software,Receita,22500.00,2025-03-20,
+Assinatura SaaS,Receita,27400.00,2025-03-21,
+Vendas de Software,Receita,20300.00,2025-03-22,
+Assinatura SaaS,Receita,26500.00,2025-03-23,
+Manutenção,Despesa,10500.00,2025-03-24,Troca de nobreaks
+Vendas de Software,Receita,23800.00,2025-03-25,
+Assinatura SaaS,Receita,29800.00,2025-03-26,
+Vendas de Software,Receita,18900.00,2025-03-27,
+Assinatura SaaS,Receita,28100.00,2025-03-28,
+Vendas de Software,Receita,21700.00,2025-03-29,
+Assinatura SaaS,Receita,31200.00,2025-03-30,Novo cliente fintech
+Vendas de Software,Receita,24500.00,2025-03-31

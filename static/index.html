@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Plataforma SaaS de Atendimento e Suporte com IA — Gerencie documentos e obtenha respostas inteligentes.">
+  <title>Atendimento & Suporte — Plataforma IA</title>
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🤖</text></svg>">
+  <link rel="stylesheet" href="/static/css/style.css">
+</head>
+
+<body>
+
+  <div class="app-container">
+
+    <!-- ══ AUTH SCREENS ══ -->
+    <div id="auth-screen" class="auth-screen">
+      <div class="auth-card">
+        <div class="auth-logo">🏦</div>
+        <h1 class="auth-title">Atendimento & Suporte IA</h1>
+        <p class="auth-subtitle">Plataforma inteligente para seus documentos</p>
+
+        <!-- Login Form -->
+        <form id="login-form" class="auth-form">
+          <div class="form-group">
+            <label for="login-email">Email</label>
+            <input type="email" id="login-email" placeholder="seu@email.com" required>
+          </div>
+          <div class="form-group">
+            <label for="login-password">Senha</label>
+            <input type="password" id="login-password" placeholder="Sua senha" required>
+          </div>
+          <button type="submit" class="btn-primary" id="login-btn">Entrar</button>
+          <div id="login-error" class="auth-error" style="display:none"></div>
+        </form>
+
+        <!-- Register Form -->
+        <form id="register-form" class="auth-form" style="display:none">
+          <div class="form-group">
+            <label for="register-name">Nome completo</label>
+            <input type="text" id="register-name" placeholder="Seu nome" required>
+          </div>
+          <div class="form-group">
+            <label for="register-company">Nome da empresa</label>
+            <input type="text" id="register-company" placeholder="Sua empresa" required>
+          </div>
+          <div class="form-group">
+            <label for="register-email">Email</label>
+            <input type="email" id="register-email" placeholder="seu@email.com" required>
+          </div>
+          <div class="form-group">
+            <label for="register-password">Senha</label>
+            <input type="password" id="register-password" placeholder="Sua senha"
+              required>
+          </div>
+          <button type="submit" class="btn-primary" id="register-btn">Criar conta</button>
+          <div id="register-error" class="auth-error" style="display:none"></div>
+        </form>
+
+        <div class="auth-switch">
+          <span id="switch-to-register">Não tem conta? <strong>Cadastre-se</strong></span>
+          <span id="switch-to-login" style="display:none">Já tem conta? <strong>Entrar</strong></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══ MAIN APP ══ -->
+    <div id="main-app" style="display:none">
+
+      <!-- ── Header ── -->
+      <header class="app-header">
+        <div class="header-brand">
+          <div class="header-logo">🏦</div>
+          <div>
+            <div class="header-title" id="header-tenant-name">Atendimento & Suporte</div>
+            <div class="header-subtitle">Assistente com Inteligência Artificial</div>
+          </div>
+        </div>
+        <div class="header-actions">
+          <nav class="header-nav">
+            <button class="nav-btn active" data-view="chat" id="nav-chat">💬 Chat</button>
+            <button class="nav-btn" data-view="documents" id="nav-docs">📄 Documentos</button>
+            <button class="nav-btn" data-view="dashboard" id="nav-dashboard">📊 Dashboard</button>
+          </nav>
+          <div class="header-user">
+            <span id="user-name" class="user-name"></span>
+            <span id="user-plan" class="plan-badge">Free</span>
+            <button id="logout-btn" class="btn-icon" title="Sair">🚪</button>
+          </div>
+        </div>
+      </header>
+
+      <!-- ── Content Views ── -->
+      <main class="main-content">
+
+        <!-- ═══ CHAT VIEW ═══ -->
+        <div id="view-chat" class="view active">
+          <!-- Welcome -->
+          <div id="welcome-section" class="welcome-section">
+            <div class="welcome-icon">💬</div>
+            <h1 class="welcome-title">Como posso ajudar você?</h1>
+            <p class="welcome-description">
+              Pergunte qualquer coisa sobre seus documentos. Utilizo inteligência artificial para buscar e apresentar as
+              melhores respostas.
+            </p>
+            <div class="quick-actions">
+              <button class="quick-action-btn" data-question="Como alterar minha senha?">
+                <span class="quick-action-icon">🔑</span>
+                <div>
+                  <div class="quick-action-text">Alterar senha</div>
+                  <div class="quick-action-desc">Instruções para trocar sua senha</div>
+                </div>
+              </button>
+              <button class="quick-action-btn" data-question="Quais são os serviços oferecidos?">
+                <span class="quick-action-icon">📋</span>
+                <div>
+                  <div class="quick-action-text">Serviços oferecidos</div>
+                  <div class="quick-action-desc">Lista de serviços disponíveis</div>
+                </div>
+              </button>
+              <button class="quick-action-btn" data-question="Resuma o conteúdo principal deste documento">
+                <span class="quick-action-icon">📝</span>
+                <div>
+                  <div class="quick-action-text">Resumir documento</div>
+                  <div class="quick-action-desc">Visão geral do conteúdo</div>
+                </div>
+              </button>
+              <button class="quick-action-btn" data-question="Quais os pontos mais importantes?">
+                <span class="quick-action-icon">⭐</span>
+                <div>
+                  <div class="quick-action-text">Pontos-chave</div>
+                  <div class="quick-action-desc">Destaques do documento</div>
+                </div>
+              </button>
+            </div>
+          </div>
+
+          <!-- Chat Messages -->
+          <div id="chat-area" class="chat-area"></div>
+
+          <!-- Input Area -->
+          <div class="input-area">
+            <div class="input-config">
+              <span class="config-label">📄 Documento:</span>
+              <select id="doc-select" class="config-select">
+                <option value="">Todos os documentos</option>
+              </select>
+              <button id="clear-chat-btn" class="btn-sm" style="margin-left:auto; background:transparent; color:#6b7280; border:1px solid #e5e7eb;" title="Limpar mensagens">🧹 Limpar</button>
+            </div>
+            <div class="input-wrapper">
+              <textarea id="question-input" class="input-field" placeholder="Digite sua pergunta aqui..."
+                rows="1"></textarea>
+              <button id="send-btn" class="send-btn" title="Enviar pergunta">➤</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- ═══ DOCUMENTS VIEW ═══ -->
+        <div id="view-documents" class="view" style="display:none">
+          <div class="view-header">
+            <h2>📄 Meus Documentos</h2>
+            <label class="btn-primary upload-btn">
+              📤 Upload PDF
+              <input type="file" id="file-upload" accept=".pdf" style="display:none">
+            </label>
+          </div>
+          <div id="upload-progress" class="upload-progress" style="display:none">
+            <div class="progress-bar"><div class="progress-fill" id="progress-fill"></div></div>
+            <span id="upload-status">Enviando...</span>
+          </div>
+          <div id="documents-list" class="documents-grid">
+            <div class="empty-state">
+              <span class="empty-icon">📁</span>
+              <p>Nenhum documento enviado ainda.</p>
+              <p class="empty-hint">Faça upload de um PDF para começar.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- ═══ DASHBOARD VIEW ═══ -->
+        <div id="view-dashboard" class="view" style="display:none">
+          <div class="view-header">
+            <h2>📊 Dashboard</h2>
+          </div>
+          <div class="dashboard-grid" id="dashboard-content">
+            <!-- Preenchido via JS -->
+          </div>
+        </div>
+
+      </main>
+
+    </div>
+
+    <!-- ── Footer ── -->
+    <footer class="app-footer">
+      <div class="footer-content">
+        <span class="footer-text">Produzido por <strong>Jacn Soluções em IA</strong></span>
+        <span class="footer-divider">|</span>
+        <a href="https://wa.me/5521991887787" class="footer-contact" target="_blank" rel="noopener">
+          📱 +55 21 991887787
+        </a>
+      </div>
+    </footer>
+  </div>
+
+  <script src="/static/js/app.js?v=2"></script>
+</body>
+
+</html>
