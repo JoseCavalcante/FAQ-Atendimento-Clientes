@@ -90,5 +90,4 @@ python -m uvicorn main:app --reload
 Abra o navegador e acesse a interface do sistema:
 👉 **[http://127.0.0.1:8000/app](http://127.0.0.1:8000/app)**
 
-## 📝 Licença
-Este projeto faz parte do curso **Udemy — LLM Para Empresas e Negócios**, desenvolvido para fins educativos e como base escalável para negócios SaaS reais. Produzido por **Jacn Soluções em IA**.
+
